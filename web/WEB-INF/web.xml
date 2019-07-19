@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>com.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/registerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>com.filter.EncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>loginFilter</filter-name>
+        <filter-class>com.filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>loginFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <servlet>
+        <servlet-name>goodsQueryServlet</servlet-name>
+        <servlet-class>com.servlet.GoodsQueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goodsQueryServlet</servlet-name>
+        <url-pattern>/goodsQueryServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>goodsLoadServlet</servlet-name>
+        <servlet-class>com.servlet.GoodsLoadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goodsLoadServlet</servlet-name>
+        <url-pattern>/goodsLoadServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>goodsUpdataServlet</servlet-name>
+        <servlet-class>com.servlet.GoodsUpdataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goodsUpdataServlet</servlet-name>
+        <url-pattern>/goodsUpdataServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>goodsDeleteServlet</servlet-name>
+        <servlet-class>com.servlet.GoodsDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goodsDeleteServlet</servlet-name>
+        <url-pattern>/goodsDeleteServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>addDataServlet</servlet-name>
+    <servlet-class>com.servlet.AddDataServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>addDataServlet</servlet-name>
+        <url-pattern>/addDataServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>loginSession</servlet-name>
+        <servlet-class>com.servlet.LoginSession</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginSession</servlet-name>
+        <url-pattern>/loginSession</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logOut</servlet-name>
+        <servlet-class>com.servlet.LogOut</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logOut</servlet-name>
+        <url-pattern>/logOut</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+</web-app>

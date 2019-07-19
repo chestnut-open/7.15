@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="7.15:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/7_15_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="7.15/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="7.15" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="db" />
+          <element id="library" level="application" name="fileupload" />
+          <element id="library" level="application" name="jstl1.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
